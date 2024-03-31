@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply rounded px-2 py-1 mx-2
+}
+
+.btn-primary {
+    @apply bg-indigo-800 hover:bg-indigo-600 text-white hover:text-amber-400
+}
+
+html, body {
+    height: 100%;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "tnm-website",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tailwind:init": "tailwindcss init && mkdir ./src/tailwind_src && touch ./src/tailwind_src/input.css",
+    "tailwind:watch": "tailwindcss -i ./src/tailwind_src/input.css -o ./src/style.css --watch"
+  },
+  "dependencies": {
+    "firebase": "^9.9.4",
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.5",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.1.0",
+    "husky": "^9.0.11",
+    "tailwindcss": "^3.4.3",
+    "vite": "^3.1.0"
+  },
+    "husky": {
+      "hooks": {
+        "pre-commit": "tailwindcss -i ./src/tailwind_src/input.css -o ./src/style.css && git add ."
+      }
+    }
+}
