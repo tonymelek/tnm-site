@@ -18,7 +18,7 @@
       <div class="container mx-auto text-center">
         <h2 class="text-2xl font-bold mb-4 text-indigo-800" id="feedback">Feedback</h2>
         <p class="text-lg">Have you tried our services?<br> Let us know how did you find it.</p>
-        <p class="text-lg">We use our customers feedbacks to enhance our services.<br/> All comments are revised and taken seriousl. </p>
+        <p class="text-lg">We use our customers feedbacks to enhance our services.<br/> All comments are revised and taken seriously. </p>
       </div>
     </section>
   </div>

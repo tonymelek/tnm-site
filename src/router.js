@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "./components/Home.vue";
-import Help from "./components/Help.vue";
-import AboutUs from "./components/AboutUs.vue";
+import Home from "./containers/Home.vue";
+import Help from "./containers/Help.vue";
+import AboutUs from "./containers/AboutUs.vue";
 
 
 const options = {
