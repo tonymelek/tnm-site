@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npx tailwindcss -i ./src/tailwind_src/input.css -o ./src/style.css
+git add .
