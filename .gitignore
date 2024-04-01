@@ -25,3 +25,4 @@ dist-ssr
 
 # tailwind
 src/tailwind/*
+.env
