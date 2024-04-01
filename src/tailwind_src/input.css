@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .btn {
-    @apply rounded px-2 py-1 mx-2
+    @apply rounded mx-2 px-5 py-2;
 }
 
 .btn-primary {
