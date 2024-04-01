@@ -8,7 +8,7 @@
             <img src="/tnm_logo_only_t.png" width="200" class="py-2">
           </div>
           <div class="rig">
-               <h1 class="text-4xl font-bold mb-4">Welcome to TNM Investments Group Pty Ltd</h1>
+               <h1 class="text-4xl font-bold mb-4">Welcome to TNM Group</h1>
                 <p class="text-lg">Your one-stop solution for IT consultations, web development, domain hosting, and email services.</p>
                 <p class="text-lg mt-4">We offer competitive prices and comprehensive solutions tailored to your needs.</p>
           </div>

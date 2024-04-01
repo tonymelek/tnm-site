@@ -20,23 +20,23 @@ export const footerItems=[
         title:"Help",
         link:"/help",
         list:[
-            {name:'Contact us'},
-            {name:'Feedback'}
+            {name:'Contact us',link:'/help#contact-us'},
+            {name:'Feedback',link:'/help#feedback'}
         ]
     },
     {
         title:"About",
         link:"/about-us",
         list:[
-            {name:'About us'}
+            {name:'About us',link:'/about-us'}
         ]
     },
-    {
-        title:"Privacy and terms",
-        link:"/privacy",
-        list:[
-            {name:'Privacy'},
-            {name:'Your information'}
-        ]
-    }
+    // {
+    //     title:"Privacy and terms",
+    //     link:"/privacy",
+    //     list:[
+    //         {name:'Privacy'},
+    //         {name:'Your information'}
+    //     ]
+    // }
 ]

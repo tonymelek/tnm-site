@@ -11,6 +11,7 @@
     "tailwind:watch": "tailwindcss -i ./src/tailwind_src/input.css -o ./src/style.css --watch"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "firebase": "^9.9.4",
     "vue": "^3.2.37",
     "vue-router": "^4.1.5",

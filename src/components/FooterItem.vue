@@ -4,7 +4,10 @@
         <a :href="link">{{ title }}</a>
       </h3>
       <ul class="list-unstyled text-center">
-        <li v-for="item in list">{{ item.name }}</li>  
+        <li v-for="item in list">
+        <a v-if="item.link" :href="item.link">{{ item.name }}</a>
+        <span v-else>{{ item.name }}</span>
+        </li>  
       </ul>
     </div>
 </template>
