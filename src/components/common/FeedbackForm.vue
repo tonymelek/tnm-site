@@ -30,8 +30,27 @@ export default {
         };
     },
     methods: {
-        submitForm() {
+        async submitForm() {
             // Here you can submit the form data to your backend or perform any other action
+            const myHeaders = new Headers();
+            myHeaders.append("Content-Type", "text/plain");
+
+            const raw = JSON.stringify({
+                "name": this.name,
+                "email": this.email,
+                "feedback": this.feedback
+            });
+
+            const requestOptions = {
+                method: "POST",
+                headers: myHeaders,
+                body: raw,
+            };
+
+            fetch("https://tnm-website.netlify.app/.netlify/functions/send-mail", requestOptions)
+                .then((response) => response.text())
+                .then((_) => alert("Message sent successfully"))
+                .catch((_) => alert("Error happened while sending message"));
             console.log('Form submitted:', this.name, this.email, this.feedback);
             // Reset form fields
             this.name = '';
