@@ -21,7 +21,7 @@ const sendMailHelper = async message => {
     headers: {
       'Content-Type': 'application/json',
       'X-Requested-With': 'XMLHttpRequest',
-      'Authorization': 'Bearer mlsn.bc79835f088b8b097475c364d435ef1b254f6a1104c1cbc8d6a11624ea4eee24'
+      'Authorization': 'Bearer mlsn.a78e54b9dc9bea7771e05a146fe4b7353aa0acbb511ee8b9387f575c2d07b59e'
     },
     data: axiosData
   };

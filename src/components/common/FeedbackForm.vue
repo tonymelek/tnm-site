@@ -1,4 +1,5 @@
 <template>
+    <Loader :showLoading="loading"/>
     <div class="max-w-lg mx-auto text-left border-solid border-2 rounded-lg	 border-indigo-400 shadow-md p-3 m-2">
         <form @submit.prevent="submitForm">
             <div class="mb-4">
@@ -21,13 +22,19 @@
 </template>
 
 <script>
+import Loader from './Loader.vue';
+
 export default {
     data() {
         return {
             name: '',
             email: '',
-            feedback: ''
+            feedback: '',
+            loading: false
         };
+    },
+    components:{
+        Loader
     },
     methods: {
         async submitForm() {
@@ -46,11 +53,12 @@ export default {
                 headers: myHeaders,
                 body: raw,
             };
-
+            this.loading=true;
             fetch("https://tnm-website.netlify.app/.netlify/functions/send-mail", requestOptions)
                 .then((response) => response.text())
                 .then((_) => alert("Message sent successfully"))
-                .catch((_) => alert("Error happened while sending message"));
+                .catch((_) => alert("Error happened while sending message"))
+                .finally(()=>this.loading=false)
             console.log('Form submitted:', this.name, this.email, this.feedback);
             // Reset form fields
             this.name = '';
